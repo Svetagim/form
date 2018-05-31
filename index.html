@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Competition</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="includes/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="includes/javascript.js"></script>
+</head>
+<header>
+    <section id="welcome"></section>
+</header>
+<body>
+<div id="wrapper" class="container">
+    <section id="glasses"></section>
+    <form action="http://html5-book.co.il/teach/forms/get_form2.php" method="get"
+      autocomplete ="on">
+        <br>
+        <label> Full Name:
+            <input type="text" required class="form-control" name="fullName">
+        </label>
+        <label> Password:
+            <input type="password" required name="pass" class="form-control" minlength="6" maxlength="8" id="exampleInputPassword1">
+        </label>
+        <label> Email:
+            <input type="email" required name="mail" class="form-control" id="exampleInputEmail1" >
+        </label>
+        <label> Website:
+            <input type="url" class="form-control" name="website">
+        </label>
+        <label> Phone:
+            <input type="tel" class="form-control" name="phone" pattern="[0][0-9]{9}" title="0*********">
+        </label>
+        <label> Coffee:
+            <input type="number" class="form-control" name="coffee" min="0">
+        </label>
+        <label>Temperature:
+            0<input type="range"  id="temp" name="temper" value="50" min="0" max="100">100
+        </label>
+        <label>Address:
+            <textarea class="form-control" name="address" rows="2" id="myAddress"></textarea>
+        </label>
+        <h4 id="h4Address">Valid address: "4 Privet Drive, London", "Number 12, Grimmauld Place", "St Mungo's Hospital for Magical Maladies and Injuries, London", "Shrieking Shack, Hogsmeade"
+        </h4>
+        <label>Interests:
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="interests[]" id="inlineCheckbox1" value="Potions">
+                <label class="form-check-label" for="inlineCheckbox1">Potions</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="interests[]" id="inlineCheckbox2" value="Spells">
+                <label class="form-check-label" for="inlineCheckbox2">Spells</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="interests[]" id="inlineCheckbox3" value="Quidditch">
+                <label class="form-check-label" for="inlineCheckbox1">Quidditch</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="interests[]" id="inlineCheckbox4" value="Arithmancy">
+                <label class="form-check-label" for="inlineCheckbox2">Arithmancy</label>
+            </div>
+        </label>
+        <br>
+        <label>Gender:
+            <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="witch"><label class="form-check-label" for="inlineRadio1">Witch</label>
+            </div>
+            <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="wizard">
+                <label class="form-check-label" for="inlineRadio2">Wizard</label>
+            </div>
+        </label>
+            <br>
+        <label> Age:
+            <select name="age">
+                <option value="10">10</option>
+                <option value="11" selected>11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+            </select>
+        </label><br>
+        <input type="submit" value=""  id="btnSubmit">
+    </form>
+
+</div>
+</body>
+</html>

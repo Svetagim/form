@@ -1,0 +1,88 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial,sans-serif;
+}
+
+section{display: block}
+
+#wrapper {
+    width: 1000px;
+    min-height: 600px;
+    margin: 0 auto;
+}
+
+#welcome{
+    background-image: url(../images/welcome.png);
+    background-repeat: no-repeat;
+    width: 850px;
+    height: 120px;
+    margin-left: 30px;
+}
+
+body{
+    background-color: #fbf9c9;
+    background-image: url(../images/hogwarts.svg);
+    background-size: 1200px;
+    background-repeat: no-repeat;
+}
+
+.form-control{
+    width: 320px;
+}
+#temp{
+    width: 270px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+form {
+    display: block;
+    padding-left: 50px;
+    width: 750px;
+    min-height: 550px;
+    color: #fbf9c9;
+    background-color: #dd0069;
+    opacity: 0.8;
+    position: absolute;
+    top:100px;
+}
+
+#btnSubmit{
+    background-image: url(../images/send.png);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 40px;
+    background-size: 200px;
+    float: right;
+    margin-right: 60px;
+    margin-bottom: 40px;
+}
+
+
+h4{
+    font-size: 12px;
+    width: 370px;
+    float: right;
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-right: 40px; ;
+    visibility: hidden;
+}
+
+@media (max-width: 999px) {
+    #welcome{
+        background-image: url(../images/welcome2.png);
+        background-repeat: no-repeat;
+        width: 500px;
+        height: 300px;
+    }
+
+    form {
+        padding-left: 40px;
+        width: 400px;
+        min-height: 600px;
+        margin-bottom: 40px;
+        top: 200px;
+    }
+}
